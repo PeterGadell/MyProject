@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto&display=swap");
+
+/* First set up your over styles with the * and body tags---also import google fonts */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* no bullet points for our list items--so list style to none */
+
+ul {
+  list-style: none;
+}
+
+/* remove the underline of our links and change the link color--this applies to all links */
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* for our large headings make a light font weight and lessen the line height for headings */
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
