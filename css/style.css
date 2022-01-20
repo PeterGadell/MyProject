@@ -34,3 +34,14 @@ h2 {
   font-weight: 300;
   line-height: 1.2;
 }
+/* Because we took away the margins, add for any p tag, a margin of ten pixels on the top and bottom */
+p {
+  margin: 10px 0;
+}
+
+/* Any images I want to have a width of 100 percent of their container by default */
+
+img {
+  width: 100%;
+}
+/*  This is the end of all our base changes to our tags*/
