@@ -8,36 +8,35 @@
   color: #0284d0;
 }
 
-/* Navbar---useing flexbox to put our links in the right place on the right side */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* button styleing on the homepage */
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  color: #fff;
+}
+.btn-secondary {
+  background-color: #0284d0;
+  color: #fff;
+}
+.btn-dark {
   background-color: #333;
   color: #fff;
-  opacity: 0.8;
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0px;
-  padding: 0 30px;
 }
-
-/* will use flexbox to put our navbar links horizontal instead of vertical, lets target the a an ul tags in the navbar */
-.navbar a {
-  color: #fff;
-  padding: 10px 20px;
-  margin: 0 5px;
-}
-
-.navbar a:hover {
-  border-bottom: 2px solid #28a745;
-}
-
-.navbar ul {
-  display: flex;
-}
-
-.navbar .logo {
-  font-weight: 400;
+.btn-light {
+  background-color: #f4f4f4;
+  color: #333;
 }

@@ -45,3 +45,91 @@ img {
   width: 100%;
 }
 /*  This is the end of all our base changes to our tags*/
+
+/* Navbar---useing flexbox to put our links in the right place on the right side */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+}
+
+/* will use flexbox to put our navbar links horizontal instead of vertical, lets target the a an ul tags in the navbar */
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #28a745;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+/* Now for the hero section we will put in out picture and center our content useing flexbox */
+
+.hero {
+  background-image: url("../img/showcase.jpg");
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+/* style content */
+
+.hero .content h1 {
+  font-size: 55px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+/* overlay---useing a psuedo seletor called before--this allows us to insert content before or after this element */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* now we will move the content up with the z index */
+/* we will be saying anything that is in "hero" move up with a z index of 10, this is layering this */
+/* the higher the z index it is the closer to the screen (to you) it is, thew lower, the further back it is */
+
+.hero * {
+  z-index: 10;
+}
