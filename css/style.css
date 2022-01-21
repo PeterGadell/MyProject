@@ -133,3 +133,24 @@ img {
 .hero * {
   z-index: 10;
 }
+
+/* Icon class styleing */
+
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* to target font awesome icons, use the selector tag icons i */
+
+.icons i {
+  background-color: #28a745;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
