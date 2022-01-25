@@ -16,7 +16,7 @@
     <!-- The navbar will be within the header. The header is the whole first section includeing pic -->
 
     <header class="hero">
-      <div id="navbar" class="navbar">
+      <div id="navbar" class="navbar top">
         <h1 class="logo">
           <span class="text-primary">
             <i class="fas fa-lightbulb"></i>Blink</span
@@ -244,5 +244,37 @@
       </div>
       <p>Copyright &copy; BlinkBrite</p>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      window.onscroll = function () {
+        if (window.pageYOffset > 400) {
+          navbar.classList.remove("top");
+        } else {
+          navbar.classList.add("top");
+        }
+      };
+
+      $("#navbar a, .btn").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - 70,
+            },
+            800
+          );
+        }
+      });
+    </script>
   </body>
 </html>

@@ -61,6 +61,10 @@ img {
   padding: 0 30px;
 }
 
+.navbar.top {
+  background: transparent;
+}
+
 /* will use flexbox to put our navbar links horizontal instead of vertical, lets target the a an ul tags in the navbar */
 .navbar a {
   color: #fff;
