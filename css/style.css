@@ -134,6 +134,14 @@ img {
   z-index: 10;
 }
 
+.hero.blog {
+  background-image: url("../img/blog.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
 /* Icon class styleing */
 
 .icons {
@@ -196,6 +204,29 @@ img {
 .callback-form .btn {
   padding: 12px 0;
   margin-top: 20px;
+}
+
+/* style the post page */
+.post {
+  padding: 50px 30px;
+}
+
+.post h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: #ccc solid 1px;
+}
+
+.post .meta {
+  margin-bottom: 30px;
+}
+
+.post img {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
 }
 
 /* Footer */
